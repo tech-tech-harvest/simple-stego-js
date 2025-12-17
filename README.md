@@ -25,11 +25,9 @@
 1. リポジトリ内の `index.html` をブラウザで開きます．
 2. 画面上のエリアに画像をドラッグ＆ドロップ（またはクリックして選択）します．
 3. 埋め込みたいメッセージをテキストエリアに入力します．
-```text
-例: Premature optimization is the root of all evil.
-```
-
-
+  ```text
+  例: Premature optimization is the root of all evil.
+  ```
 4. 「画像を生成してダウンロード」ボタンを押すと，テキストが埋め込まれた PNG 画像が保存されます．
 
 ## Logic & Notes
