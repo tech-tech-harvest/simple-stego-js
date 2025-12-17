@@ -27,7 +27,6 @@
 3. 埋め込みたいメッセージをテキストエリアに入力します．
 ```text
 例: Premature optimization is the root of all evil.
-
 ```
 
 
