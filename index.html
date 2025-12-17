@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webステガノグラフィ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Webステガノグラフィ (埋め込みツール)</h1>
+    <p>サーバーに送信せず、ブラウザ内で完結します。</p>
+
+    <div class="container">
+        <h3>1. 画像を選択</h3>
+        <div id="dropZone" class="drop-zone">
+            <p>ここに画像をドラッグ＆ドロップ<br>またはクリックして選択</p>
+            <input type="file" id="uploadInput" accept="image/*" style="display:none;">
+        </div>
+        <p id="fileNameDisplay" style="font-size: 0.9em; color: #666; margin-top: 5px;"></p>
+        
+        <h3>2. 隠したいメッセージ (英語推奨)</h3>
+        <textarea id="secretText" placeholder="画像に埋め込みたい秘密のメッセージをここに入力してください..."></textarea>
+
+        <h3>3. 実行</h3>
+        <button onclick="embedData()">画像を生成してダウンロード</button>
+        
+        <div id="resultArea">
+            <h4>生成された画像 (右クリックで保存も可能)</h4>
+            <img id="outputImage" src="" alt="Output">
+            <br><br>
+            <a id="downloadLink" href="#" download="hidden_image.png">画像をダウンロード</a>
+        </div>
+        
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
